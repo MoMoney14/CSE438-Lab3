@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WbB-bF-Xao">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MahotoSasaki_Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soj-cC-nV2">
+                                <rect key="frame" x="5" y="669" width="365" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aIA-To-DVR">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vgs-ec-tjh">
+                                                <rect key="frame" x="0.0" y="0.0" width="365" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-Un-a9M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59.333333333333336" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="j9e-oe-uel">
+                                                        <rect key="frame" x="62.333333333333343" y="0.0" width="304.66666666666663" height="31"/>
+                                                        <connections>
+                                                            <action selector="moveBrightnessSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="e9B-1J-k47"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-jl-zqc">
+                                        <rect key="frame" x="0.0" y="30" width="365" height="30"/>
+                                        <state key="normal" title="Animate"/>
+                                        <connections>
+                                            <action selector="animateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHo-wI-cWB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="iJB-jl-zqc" firstAttribute="top" secondItem="aIA-To-DVR" secondAttribute="bottom" id="5u5-5E-VKS"/>
+                                    <constraint firstItem="aIA-To-DVR" firstAttribute="top" secondItem="Soj-cC-nV2" secondAttribute="top" id="9IF-Zq-f0c"/>
+                                    <constraint firstAttribute="trailing" secondItem="aIA-To-DVR" secondAttribute="trailing" id="B9u-lj-ODV"/>
+                                    <constraint firstAttribute="bottom" secondItem="iJB-jl-zqc" secondAttribute="bottom" id="G6Y-zI-B3x"/>
+                                    <constraint firstItem="iJB-jl-zqc" firstAttribute="leading" secondItem="Soj-cC-nV2" secondAttribute="leading" id="HcW-ad-c7k"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJB-jl-zqc" secondAttribute="trailing" id="XVw-Ma-Whg"/>
+                                    <constraint firstItem="aIA-To-DVR" firstAttribute="leading" secondItem="Soj-cC-nV2" secondAttribute="leading" id="a7g-gE-vGt"/>
+                                    <constraint firstItem="iJB-jl-zqc" firstAttribute="top" secondItem="aIA-To-DVR" secondAttribute="bottom" id="cp6-ej-7Vf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Soj-cC-nV2" secondAttribute="trailing" constant="5" id="7OE-WW-Y4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Soj-cC-nV2" secondAttribute="bottom" id="fBT-jX-XEG"/>
+                            <constraint firstItem="Soj-cC-nV2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="swO-Gq-8tF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="J40-Gk-4O9"/>
+                        <barButtonItem title="Item" image="circle.fill" catalog="system" id="FW4-XB-Yl4">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="toolBarButtonItemPresssed:" destination="BYZ-38-t0r" id="xv9-bh-a3y"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="2U6-li-GYS"/>
+                        <barButtonItem title="Item" image="circle.fill" catalog="system" id="HcP-ci-nyx">
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="toolBarButtonItemPresssed:" destination="BYZ-38-t0r" id="oJT-Y7-4cL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5FX-Up-edj"/>
+                        <barButtonItem title="Item" image="circle.fill" catalog="system" id="hsc-HQ-5TB">
+                            <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="toolBarButtonItemPresssed:" destination="BYZ-38-t0r" id="Tkm-YE-2D0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ujZ-Tc-a9S"/>
+                        <barButtonItem title="Item" image="circle.fill" catalog="system" id="uWd-DM-4Hj">
+                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="toolBarButtonItemPresssed:" destination="BYZ-38-t0r" id="Kvy-Sz-A4F"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="pmq-2f-bJZ"/>
+                        <barButtonItem title="Item" image="circle.fill" catalog="system" id="JUl-4D-XBe">
+                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="toolBarButtonItemPresssed:" destination="BYZ-38-t0r" id="Mr1-lM-YK4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kje-JH-OwN"/>
+                        <barButtonItem title="Save" id="ZsZ-yA-XFu">
+                            <connections>
+                                <action selector="saveBarButtonItemPressed:" destination="BYZ-38-t0r" id="Ar3-A8-ICL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="d39-Tp-aK3"/>
+                        <barButtonItem title="More" id="iYr-KN-vsn" userLabel="More">
+                            <connections>
+                                <action selector="moreBarButtonItemPressed:" destination="BYZ-38-t0r" id="RJa-sd-ctV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bk2-iM-geu"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="Cqj-bd-i62">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="9jX-CV-yZM">
+                            <connections>
+                                <action selector="clearBarButtonPressed:" destination="BYZ-38-t0r" id="lFn-iD-Qfd"/>
+                            </connections>
+                        </barButtonItem>
+                        <slider key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="zGW-SI-uMR">
+                            <rect key="frame" x="65.333333333333314" y="5" width="246" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="movedStrokeWidthSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ww9-lW-sTW"/>
+                            </connections>
+                        </slider>
+                        <barButtonItem key="rightBarButtonItem" title="Undo" id="g2N-MY-akZ">
+                            <connections>
+                                <action selector="undoBarButtonPressed:" destination="BYZ-38-t0r" id="0FW-WM-bvf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="moreView" destination="Soj-cC-nV2" id="UuY-Wk-Wab"/>
+                        <outlet property="strokeWidthSlider" destination="zGW-SI-uMR" id="zDA-R6-XoT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="129.31034482758622"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RVK-2F-sHB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="WbB-bF-Xao" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kSu-my-eaW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qjt-xn-PGX">
+                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jgu-Ac-PuQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sd-RB-Dsh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
